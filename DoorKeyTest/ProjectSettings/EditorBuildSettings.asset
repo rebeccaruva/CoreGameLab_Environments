@@ -1,0 +1,13 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/doorScene.unity
+    guid: d830d763837ee8f43ba8c0d27a485f01
+  - enabled: 1
+    path: Assets/win.unity
+    guid: 9304c9965729c5c41a038ff905a886a9
