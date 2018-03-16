@@ -1,12 +1,18 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2017
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P2_PLATFORMER", "P2_PLATFORMER.csproj", "{0CE5E345-F10C-FC74-0C24-3C0A8130A8AB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0CE5E345-F10C-FC74-0C24-3C0A8130A8AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0CE5E345-F10C-FC74-0C24-3C0A8130A8AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0CE5E345-F10C-FC74-0C24-3C0A8130A8AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0CE5E345-F10C-FC74-0C24-3C0A8130A8AB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

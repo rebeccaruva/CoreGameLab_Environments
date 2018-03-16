@@ -4,4 +4,16 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/1-start.unity
+    guid: 5d84322940c90a44eb146007e0322171
+  - enabled: 1
+    path: Assets/2-xibalba.unity
+    guid: 849f106881a9978498591c0a1de2841c
+  - enabled: 1
+    path: Assets/3-earth.unity
+    guid: 157b03c37a4a5e54cb59dc65e1b31a8f
+  - enabled: 1
+    path: Assets/4-twins.unity
+    guid: 52b2a289dfd9803448f7534a9c3587d3
