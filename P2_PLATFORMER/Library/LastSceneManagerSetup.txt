@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/3-earth.unity
+- path: Assets/1.5-intro.unity
   isLoaded: 1
   isActive: 1
