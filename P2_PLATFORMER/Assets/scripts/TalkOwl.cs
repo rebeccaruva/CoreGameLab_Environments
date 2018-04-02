@@ -8,27 +8,36 @@ public class TalkOwl : MonoBehaviour {
     private int lineNum = 0;
     private string[] words;
 
+    public AudioClip owl;
+    private AudioSource audi;
 
-	// Use this for initialization
-	void Start () {
+
+    // Use this for initialization
+    void Start () {
         words = new string[5];
         words[0] = "hoot hoot";
         words[1] = "sometimes we'll give you advice";
         words[2] = "be careful some of us lie";
         words[3] = "goodbye now!";
         words[4] = " ";
-	}
+
+        audi = GetComponent<AudioSource>();
+    }
 	
 	// Update is called once per frame
 	void Update () {
 		if (talking && Input.GetButtonUp("Fire2"))
         {
-            //Debug.Log("i talk");
+            
             talk.text = words[lineNum];
             lineNum++;
             if (lineNum >= words.Length)
             {
                 lineNum = 0;
+            }
+            if (lineNum == 0)
+            {
+                audi.PlayOneShot(owl);
             }
         }
 	}

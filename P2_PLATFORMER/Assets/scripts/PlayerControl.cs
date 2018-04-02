@@ -58,18 +58,18 @@ public class PlayerControl : MonoBehaviour {
             this.gameObject.tag = "PlayerPicto";
         }
 
-        if ((Input.GetKeyDown(KeyCode.W) && !bat) || (Input.GetKeyDown("up") && !bat))
-        {
-            anim.SetBool("Bat", true);
-            bat = true;
-            this.gameObject.tag = "PlayerBat";
-        }
-        else if ((bat && Input.GetKeyDown(KeyCode.W)) || (bat && Input.GetKeyDown("up")))
-        {
-            anim.SetBool("Bat", false);
-            bat = false;
-            this.gameObject.tag = "PlayerPicto";
-        }
+        //if ((Input.GetKeyDown(KeyCode.W) && !bat) || (Input.GetKeyDown("up") && !bat))
+        //{
+        //    anim.SetBool("Bat", true);
+        //    bat = true;
+        //    this.gameObject.tag = "PlayerBat";
+        //}
+        //else if ((bat && Input.GetKeyDown(KeyCode.W)) || (bat && Input.GetKeyDown("up")))
+        //{
+        //    anim.SetBool("Bat", false);
+        //    bat = false;
+        //    this.gameObject.tag = "PlayerPicto";
+        //}
 
         if (Input.GetButtonDown("Fire3") && !dashing)
         {
@@ -202,8 +202,8 @@ public class PlayerControl : MonoBehaviour {
 
         if (other.CompareTag("Enemy") && !this.gameObject.CompareTag("PlayerHide"))
         {
-            transform.position = new Vector2(-5.81f, -2.57f);
-            Debug.Log("here");
+            life--;
+            UpdateLifeBar();
         }
     }
 }

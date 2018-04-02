@@ -1,16 +1,27 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class RetryOne : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+    public void RetryLevelOne()
+    {
+        SceneManager.LoadScene("2-xibalba");
+    }
+
+    public void RetryLevelTwo()
+    {
+        SceneManager.LoadScene("3-earth");
+    }
+
+    public void RetryLevelThree()
+    {
+        SceneManager.LoadScene("4-ball");
+    }
+
+    public void StartAgain()
+    {
+        SceneManager.LoadScene("1.5-intro");
+    }
 }

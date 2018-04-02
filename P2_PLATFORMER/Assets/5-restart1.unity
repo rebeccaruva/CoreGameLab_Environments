@@ -159,7 +159,7 @@ MonoBehaviour:
   m_Script: {fileID: -619905303, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_FirstSelected: {fileID: 0}
+  m_FirstSelected: {fileID: 2042181616}
   m_sendNavigationEvents: 1
   m_DragThreshold: 5
 --- !u!4 &178979700
@@ -260,7 +260,10 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
+  - {fileID: 2042181617}
+  - {fileID: 233706662}
   - {fileID: 735773502}
+  - {fileID: 1179478430}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -280,7 +283,6 @@ GameObject:
   - component: {fileID: 233706667}
   - component: {fileID: 233706666}
   - component: {fileID: 233706665}
-  - component: {fileID: 233706664}
   - component: {fileID: 233706663}
   m_Layer: 5
   m_Name: quit
@@ -297,15 +299,15 @@ RectTransform:
   m_GameObject: {fileID: 233706661}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.9999942, y: 0.9999942, z: 0.9999942}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1506054919}
-  m_Father: {fileID: 735773502}
+  m_Father: {fileID: 183503860}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 194, y: -176}
+  m_AnchoredPosition: {x: 179, y: -179}
   m_SizeDelta: {x: 135, y: 75.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &233706663
@@ -316,18 +318,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 233706661}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 40bd22ea0d7767d44ac36156be03df3d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &233706664
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 233706661}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f434fa3d165a31b4b880866ea53e0eef, type: 3}
+  m_Script: {fileID: 11500000, guid: d57a681738d2b214288f1349698a45b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &233706665
@@ -370,8 +361,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 233706664}
-        m_MethodName: XibalbaOnMouseUp
+      - m_Target: {fileID: 233706663}
+        m_MethodName: QuitOnPress
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -596,7 +587,7 @@ GameObject:
   - component: {fileID: 735773504}
   - component: {fileID: 735773503}
   m_Layer: 5
-  m_Name: Text
+  m_Name: camazotz
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -611,15 +602,13 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 2042181617}
-  - {fileID: 233706662}
+  m_Children: []
   m_Father: {fileID: 183503860}
-  m_RootOrder: 0
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.00000071526, y: 79.35565}
+  m_AnchoredPosition: {x: 3.9999998, y: 135}
   m_SizeDelta: {x: 757.2, y: 142}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &735773503
@@ -661,6 +650,82 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 735773501}
+--- !u!1 &1179478429
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1179478430}
+  - component: {fileID: 1179478432}
+  - component: {fileID: 1179478431}
+  m_Layer: 5
+  m_Name: sisepuede
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1179478430
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1179478429}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.9999942, y: 0.9999942, z: 0.9999942}
+  m_Children: []
+  m_Father: {fileID: 183503860}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 4, y: -29}
+  m_SizeDelta: {x: 757.2, y: 142}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1179478431
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1179478429}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.8455882, g: 0.77766675, b: 0.23004974, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 2bf61ec7e8a904943b866ab5965805de, type: 3}
+    m_FontSize: 50
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 0
+    m_MaxSize: 150
+    m_Alignment: 1
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 'The soil of the Earth awaits you,
+
+    why not try again?'
+--- !u!222 &1179478432
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1179478429}
 --- !u!1 &1506054918
 GameObject:
   m_ObjectHideFlags: 0
@@ -819,7 +884,6 @@ GameObject:
   - component: {fileID: 2042181621}
   - component: {fileID: 2042181620}
   - component: {fileID: 2042181619}
-  - component: {fileID: 2042181618}
   - component: {fileID: 2042181622}
   m_Layer: 5
   m_Name: retry
@@ -834,30 +898,19 @@ RectTransform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2042181616}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 533435570}
-  m_Father: {fileID: 735773502}
+  m_Father: {fileID: 183503860}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -179, y: -176}
+  m_AnchoredPosition: {x: -194.00015, y: -179}
   m_SizeDelta: {x: 135, y: 75.7}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &2042181618
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2042181616}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f434fa3d165a31b4b880866ea53e0eef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &2042181619
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -898,8 +951,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2042181618}
-        m_MethodName: XibalbaOnMouseUp
+      - m_Target: {fileID: 2042181622}
+        m_MethodName: RetryLevelOne
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

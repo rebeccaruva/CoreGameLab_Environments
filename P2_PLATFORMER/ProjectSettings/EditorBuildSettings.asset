@@ -18,5 +18,17 @@ EditorBuildSettings:
     path: Assets/3-earth.unity
     guid: 157b03c37a4a5e54cb59dc65e1b31a8f
   - enabled: 1
-    path: Assets/4-twins.unity
+    path: Assets/4-ball.unity
     guid: 52b2a289dfd9803448f7534a9c3587d3
+  - enabled: 1
+    path: Assets/5-restart1.unity
+    guid: a7e0866968a984940bed1d38677b2a8b
+  - enabled: 1
+    path: Assets/6-restart2.unity
+    guid: b5a93aa4981acfe428c8f2fb9e9b377b
+  - enabled: 1
+    path: Assets/7-restart3.unity
+    guid: ad125a8f3c32f434e8976198d4f1034b
+  - enabled: 1
+    path: Assets/8-final.unity
+    guid: d0859cddabf304647ac63381d3bd2358
