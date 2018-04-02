@@ -15,7 +15,7 @@ public class PersonLerp : MonoBehaviour {
     void Update()
     {
         Vector2 newPosition = transform.position;
-        newPosition.x = Mathf.SmoothStep(-distance-14, distance-14, Mathf.PingPong(Time.time * speed, 1));
+        newPosition.x = Mathf.SmoothStep(-distance-107, distance-107, Mathf.PingPong(Time.time * speed, 1));
         transform.position = newPosition;
     }
 
