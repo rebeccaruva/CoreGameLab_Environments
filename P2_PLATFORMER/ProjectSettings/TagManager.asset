@@ -12,6 +12,8 @@ TagManager:
   - EssenceCollect
   - Life
   - Essence
+  - Hoop
+  - Round1
   layers:
   - Default
   - TransparentFX

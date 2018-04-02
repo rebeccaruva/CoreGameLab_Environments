@@ -15,6 +15,6 @@ public class GameStart : MonoBehaviour {
 
     public void XibalbaOnMouseUp()
     {
-        SceneManager.LoadScene("2-xibalba");
+        SceneManager.LoadScene("1.5-intro");
     }
 }
