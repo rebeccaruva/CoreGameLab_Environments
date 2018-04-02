@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class PlayerControl : MonoBehaviour {
 
@@ -28,6 +29,7 @@ public class PlayerControl : MonoBehaviour {
     public int totalLife = 5;
     public GameObject lifebar; //default sprite looks empty
     public Transform lifeImg;
+    float timer;
 
     // Use this for initialization
     void Start () {
@@ -47,10 +49,22 @@ public class PlayerControl : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         //if (this.gameObject.CompareTag("PlayerPicto"))
-        if (Input.GetKey(KeyCode.S) || Input.GetKey("down"))
+        timer += Time.deltaTime;
+        int seconds = (int)(timer % 60);
+        if ((Input.GetKey(KeyCode.S) || Input.GetKey("down")))
         {
             anim.SetBool("Hide", true);
             this.gameObject.tag = "PlayerHide";
+
+            if (seconds > 10)
+            {
+                timer = 0;
+                seconds = 0;
+                anim.SetBool("Hide", false);
+                this.gameObject.tag = "PlayerPicto";
+                life--;
+                UpdateLifeBar();
+            }
         }
         else
         {
@@ -119,7 +133,8 @@ public class PlayerControl : MonoBehaviour {
             spur.flipX = false;
             direction = -1;
         }
-	}
+
+    }
     
     void DashTimer()
     {
@@ -148,36 +163,19 @@ public class PlayerControl : MonoBehaviour {
                 img_ary[i].color = Color.white;
             }
         }
-    }
 
-    void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.CompareTag("Enemy"))
+        if (life == 0)
         {
-            life--;
-            UpdateLifeBar();
-        }
-
-        if(collision.gameObject.CompareTag("EssenceCollect") && this.gameObject.CompareTag("PlayerHide"))
-        {
-            if (Input.GetButton("Fire1")) //and collide near player and hidden
+            Scene scene = SceneManager.GetActiveScene();
+            if (scene.name == "3-earth")
             {
-                anim.SetTrigger("Shoot");
-                Vector2 spawnPos = new Vector2(transform.position.x - direction, transform.position.y);
-                GameObject essencePrefab = Instantiate(essence, spawnPos, Quaternion.identity);
-
-                essencePrefab.GetComponent<SpriteRenderer>().flipX = spur.flipX;
-                essencePrefab.GetComponent<Rigidbody2D>().AddForce(transform.right * 500f * -direction);
-
-                life++;
-                UpdateLifeBar();
+                SceneManager.LoadScene("6-restart2");
+            }
+            if (scene.name == "4-ball")
+            {
+                SceneManager.LoadScene("7-restart3");
             }
         }
-        //if (collision.gameObject.CompareTag("Enemy"))
-        //{
-        //    transform.position = new Vector2(-5.81f, -2.57f);
-        //    Debug.Log("here");
-        //}
     }
 
     void OnTriggerEnter2D(Collider2D other)
@@ -203,6 +201,21 @@ public class PlayerControl : MonoBehaviour {
         if (other.CompareTag("Enemy") && !this.gameObject.CompareTag("PlayerHide"))
         {
             life--;
+            UpdateLifeBar();
+        }
+
+        if (other.gameObject.CompareTag("EssenceCollect") && (Input.GetButton("Fire1")))
+        {
+            //anim.SetTrigger("Shoot");
+            //Vector2 spawnPos = new Vector2(transform.position.x - direction, transform.position.y);
+            //GameObject essencePrefab = Instantiate(essence, spawnPos, Quaternion.identity);
+
+            //essencePrefab.GetComponent<SpriteRenderer>().flipX = spur.flipX;
+            //essencePrefab.GetComponent<Rigidbody2D>().AddForce(transform.right * 500f * -direction);
+
+            Debug.Log("im here");
+
+            life++;
             UpdateLifeBar();
         }
     }
