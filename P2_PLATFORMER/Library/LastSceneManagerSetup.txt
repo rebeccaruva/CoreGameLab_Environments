@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/1.5-intro.unity
+- path: Assets/5-restart1.unity
   isLoaded: 1
   isActive: 1

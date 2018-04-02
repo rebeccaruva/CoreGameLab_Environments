@@ -9,7 +9,7 @@ public class PlayerFollow : MonoBehaviour {
     void LateUpdate()
     { 
         //x and y
-        transform.position = new Vector3 (player.position.x, player.position.y-(player.position.y), transform.position.z);
+        transform.position = new Vector3 (player.position.x, player.position.y, transform.position.z);
 
         //only x
         //transform.position = new Vector3(player.position.x, transform.position.y, transform.position.z);
