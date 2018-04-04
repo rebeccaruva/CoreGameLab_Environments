@@ -1524,6 +1524,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   talk: {fileID: 1482595319}
   owl: {fileID: 8300000, guid: 0fc5a96b5405adc47b2e76c9956b9a11, type: 3}
+  followText: {fileID: 1549807881}
 --- !u!61 &915564083
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2533,7 +2534,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 25
   m_TargetDisplay: 0
 --- !u!224 &1927001038
 RectTransform:

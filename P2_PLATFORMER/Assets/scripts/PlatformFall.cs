@@ -6,6 +6,7 @@ public class PlatformFall : MonoBehaviour {
 
     public float delay;
 
+
     void OnCollisionEnter2D(Collision2D coll)
     {
         if (coll.gameObject.CompareTag("PlayerPicto"))
@@ -18,4 +19,5 @@ public class PlatformFall : MonoBehaviour {
     {
         GetComponent<Rigidbody2D>().isKinematic = false;
     }
+
 }

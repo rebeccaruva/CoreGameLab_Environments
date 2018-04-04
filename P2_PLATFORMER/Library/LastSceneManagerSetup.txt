@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/2-xibalba.unity
+- path: Assets/4-ball.unity
   isLoaded: 1
   isActive: 1

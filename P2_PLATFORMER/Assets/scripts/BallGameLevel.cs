@@ -5,21 +5,25 @@ using UnityEngine.SceneManagement;
 
 public class BallGameLevel : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+    public AudioClip flute;
+    private AudioSource audi;
 
-    void OnTriggerEnter2D(Collider2D collision)
+    void Start()
     {
-        if (collision.gameObject.CompareTag("PlayerPicto"))
+        audi = GetComponent<AudioSource>();
+    }
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("PlayerPicto"))
         {
-            SceneManager.LoadScene("4-ball");
+            audi.PlayOneShot(flute);
+            Invoke("NewScreen", 3);
         }
+    }
+
+    void NewScreen()
+    {
+        SceneManager.LoadScene("4-ball");
     }
 }

@@ -11,6 +11,8 @@ public class TalkOwl : MonoBehaviour {
     public AudioClip owl;
     private AudioSource audi;
 
+    public GameObject followText;
+
 
     // Use this for initialization
     void Start () {
@@ -48,6 +50,7 @@ public class TalkOwl : MonoBehaviour {
         {
             //Debug.Log("i can talk");
             talking = true;
+            followText.SetActive(false);
         }
     }
 
@@ -57,6 +60,7 @@ public class TalkOwl : MonoBehaviour {
         {
             //Debug.Log("no talk");
             talking = false;
+            talk.text = " ";
         }
     }
 }

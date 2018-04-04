@@ -2,8 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AdviceOwlOne : MonoBehaviour
-{
+public class AdviceOwlOne : MonoBehaviour { 
     public TextMesh talk;
     private bool talking = false;
     private int lineNum = 0;
@@ -14,8 +13,7 @@ public class AdviceOwlOne : MonoBehaviour
 
 
     // Use this for initialization
-    void Start()
-    {
+    void Start() {
         words = new string[5];
         words[0] = "hoot hoot";
         words[1] = "you can double jump";

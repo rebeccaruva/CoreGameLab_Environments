@@ -56,7 +56,7 @@ public class PlayerControl : MonoBehaviour {
             anim.SetBool("Hide", true);
             this.gameObject.tag = "PlayerHide";
 
-            if (seconds > 10)
+            if (seconds > 7)
             {
                 timer = 0;
                 seconds = 0;

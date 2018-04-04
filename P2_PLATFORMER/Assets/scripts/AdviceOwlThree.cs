@@ -53,6 +53,10 @@ public class AdviceOwlThree : MonoBehaviour
             //Debug.Log("i can talk");
             talking = true;
         }
+        if (lineNum == 0)
+        {
+            audi.PlayOneShot(owl);
+        }
     }
 
     void OnTriggerExit2D(Collider2D other)

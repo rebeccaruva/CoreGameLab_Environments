@@ -128,10 +128,13 @@ bc68edb0af574bf79f9550ead8ebae5c UnityEngine.HoloLens.dll:UnityEngine.Audio.Audi
 c2275a8bfbb9f9942cad75ecdfded41d UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.SpatialMappingCollider
 45f3431f0103c41611e8d4eec3d439df UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.SpatialMappingRenderer
 02256e56bf0318d8364f91f5cb1c85e6 Assembly-CSharp.dll:.HitHoopAgain
+02256e56bf0318d8364f91f5cb1c85e6 Assembly-CSharp.dll:.FINAL
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.MoonMove
+a25139a6616afe89b4fb8e73c5631ee3 Assembly-CSharp.dll:.lerb
 935ca34f7b8703d31278a4eb44e7eae7 Assembly-CSharp.dll:.AdviceOwlOne
 8fef88fa50449da888e20c812901ffd6 Assembly-CSharp.dll:.PlayerControl
-05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.BallGameLevel
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.GoToRetry
+02256e56bf0318d8364f91f5cb1c85e6 Assembly-CSharp.dll:.BallGameLevel
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.Quit
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.Advertisements.dll:UnityEngine.Advertisements.CallbackExecutor
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.Advertisements.dll:UnityEngine.Advertisements.Editor.Placeholder
@@ -151,6 +154,7 @@ e9bdabf9265d758d56f01bb188916fa8 UnityEngine.Networking.dll:UnityEngine.Networki
 3f32f08a64daf40b09ed864d96fe3840 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkTransform
 73843688b51256aed059f049c540bca8 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkTransformChild
 528ea1fd7c01796fc60c4e2f172ea229 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkTransformVisualizer
+a25139a6616afe89b4fb8e73c5631ee3 Assembly-CSharp.dll:.lerpp
 935ca34f7b8703d31278a4eb44e7eae7 Assembly-CSharp.dll:.AdviceOwlThree
 935ca34f7b8703d31278a4eb44e7eae7 Assembly-CSharp.dll:.AdviceOwlTwo
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.TestRunner.dll:UnityEngine.TestTools.TestRunner.Callbacks.PlayModeRunnerCallback
@@ -167,7 +171,7 @@ bc68edb0af574bf79f9550ead8ebae5c UnityEngine.HoloLens.dll:UnityEngine.Audio.Audi
 c2275a8bfbb9f9942cad75ecdfded41d UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.SpatialMappingCollider
 45f3431f0103c41611e8d4eec3d439df UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.SpatialMappingRenderer
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.PlayerInSight
-935ca34f7b8703d31278a4eb44e7eae7 Assembly-CSharp.dll:.TalkOwl
+329ea326ac28c180f84acbac89d197f6 Assembly-CSharp.dll:.TalkOwl
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.BulletDie
 9de3a22eca9aefadba2d10d5987cefe3 UnityEngine.SpatialTracking.dll:UnityEngine.SpatialTracking.TrackedPoseDriver
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.SunMove
@@ -175,10 +179,7 @@ a25139a6616afe89b4fb8e73c5631ee3 Assembly-CSharp.dll:.PersonLeapA
 0b26799e4fe0bb91b154f2c101165c61 Assembly-CSharp.dll:.HitHoop
 979f1454a56e6cc9e25fec81e7632611 Assembly-CSharp.dll:.ColorChange
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.GameStart
-a25139a6616afe89b4fb8e73c5631ee3 Assembly-CSharp.dll:.PlatformLeftAndRight
 935ca34f7b8703d31278a4eb44e7eae7 Assembly-CSharp.dll:.AdviceOwlFive
-05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.GoToRetry
-a25139a6616afe89b4fb8e73c5631ee3 Assembly-CSharp.dll:.lerb
-a25139a6616afe89b4fb8e73c5631ee3 Assembly-CSharp.dll:.lerpp
+a25139a6616afe89b4fb8e73c5631ee3 Assembly-CSharp.dll:.PlatformLeftAndRight
 a25139a6616afe89b4fb8e73c5631ee3 Assembly-CSharp.dll:.lerpy
-05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.FINAL
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.Menu

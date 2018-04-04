@@ -308,6 +308,7 @@
     <Compile Include="Assets\scripts\lerpp.cs" />
     <Compile Include="Assets\scripts\lerpy.cs" />
     <Compile Include="Assets\scripts\MakeHoop.cs" />
+    <Compile Include="Assets\scripts\Menu.cs" />
     <Compile Include="Assets\scripts\MoonMove.cs" />
     <Compile Include="Assets\scripts\PersonLeapA.cs" />
     <Compile Include="Assets\scripts\PersonLerp.cs" />

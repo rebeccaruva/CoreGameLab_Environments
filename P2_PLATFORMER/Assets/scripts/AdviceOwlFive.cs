@@ -60,6 +60,7 @@ public class AdviceOwlFive : MonoBehaviour
         {
             //Debug.Log("no talk");
             talking = false;
+            talk.text = " ";
         }
     }
 }

@@ -61,6 +61,7 @@ public class AdviceOwlFour : MonoBehaviour
         {
             //Debug.Log("no talk");
             talking = false;
+            talk.text = " ";
         }
     }
 }
