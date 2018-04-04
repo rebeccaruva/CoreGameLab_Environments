@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class ColorChange : MonoBehaviour
 {
-
+    private GameObject sun; 
+    float r, g, b;
     //    [SerializeField]
     //    Gradient gradient1;
     //    [SerializeField]
@@ -12,10 +13,11 @@ public class ColorChange : MonoBehaviour
     //    float time = 0f;
     //    float value;
 
-    //    void Start()
-    //    {
-    //        value = Mathf.Lerp(0f, 1f, time);
-    //    }
+    //void Start()
+    //{
+    //    value = Mathf.Lerp(0f, 1f, time);
+    //    sun = GameObject.Find("Sun"); 
+    //}
 
     //    void Update()
     //    {

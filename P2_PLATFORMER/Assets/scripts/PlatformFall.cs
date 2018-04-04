@@ -8,7 +8,7 @@ public class PlatformFall : MonoBehaviour {
 
     void OnCollisionEnter2D(Collision2D coll)
     {
-        if (coll.gameObject.CompareTag("Player"))
+        if (coll.gameObject.CompareTag("PlayerPicto"))
         { //don't need if statement if everything that hits it
             Invoke("Fall", delay); //no need to invoke if no delay, just edit isKinematic here
         }

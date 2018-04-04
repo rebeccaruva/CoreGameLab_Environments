@@ -60,6 +60,7 @@ public class AdviceOwlOne : MonoBehaviour
         {
             //Debug.Log("no talk");
             talking = false;
+            talk.text = " ";
         }
     }
 }

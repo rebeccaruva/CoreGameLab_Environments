@@ -288,6 +288,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\scripts\AdviceOwlFive.cs" />
     <Compile Include="Assets\scripts\AdviceOwlFour.cs" />
     <Compile Include="Assets\scripts\AdviceOwlOne.cs" />
     <Compile Include="Assets\scripts\AdviceOwlThree.cs" />
@@ -297,10 +298,15 @@
     <Compile Include="Assets\scripts\ColorChange.cs" />
     <Compile Include="Assets\scripts\Fader.cs" />
     <Compile Include="Assets\scripts\FaderText.cs" />
+    <Compile Include="Assets\scripts\FINAL.cs" />
     <Compile Include="Assets\scripts\GameStart.cs" />
+    <Compile Include="Assets\scripts\GoToRetry.cs" />
     <Compile Include="Assets\scripts\HitHoop.cs" />
     <Compile Include="Assets\scripts\HitHoopAgain.cs" />
     <Compile Include="Assets\scripts\HopyAgain.cs" />
+    <Compile Include="Assets\scripts\lerb.cs" />
+    <Compile Include="Assets\scripts\lerpp.cs" />
+    <Compile Include="Assets\scripts\lerpy.cs" />
     <Compile Include="Assets\scripts\MakeHoop.cs" />
     <Compile Include="Assets\scripts\MoonMove.cs" />
     <Compile Include="Assets\scripts\PersonLeapA.cs" />
