@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2017
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoogleCardboardPractice", "GoogleCardboardPractice.csproj", "{E3167A79-6BDC-FCAA-507A-0C53EB8F3D0F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoogleCardboardPractice.Editor", "GoogleCardboardPractice.Editor.csproj", "{D3745852-B379-2123-15B1-30536379583A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E3167A79-6BDC-FCAA-507A-0C53EB8F3D0F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E3167A79-6BDC-FCAA-507A-0C53EB8F3D0F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E3167A79-6BDC-FCAA-507A-0C53EB8F3D0F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E3167A79-6BDC-FCAA-507A-0C53EB8F3D0F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D3745852-B379-2123-15B1-30536379583A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3745852-B379-2123-15B1-30536379583A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3745852-B379-2123-15B1-30536379583A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3745852-B379-2123-15B1-30536379583A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
